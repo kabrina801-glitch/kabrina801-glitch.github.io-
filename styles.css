@@ -1,0 +1,71 @@
+body {
+    background-color: #F5EBDD;
+    color: #493B43;
+}
+
+
+
+header {
+    display: flex;
+    background-color: #DDAEB8;
+    color: #0a271f;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+h1 {
+    background-color: #F5EBDD;
+    color: #493B43;
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    background-color: #F5EBDD;
+    color: #493B43;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.intro {
+    max-width: 25%;
+    text-align: left;
+}
+
+.rightro {
+    max-width: 25%;
+    text-align: right;
+}
+
+footer {
+    background-color: #92B5D0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.accent {
+    background-color: #DDAEB8;
+}
+
+.lavender {
+    background-color: #B8A6C9;
+}
+
+.sage {
+    background-color: #B6B99A;
+}
+
+.gold {
+    color: #B58B50;
+}
