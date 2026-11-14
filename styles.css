@@ -1,9 +1,12 @@
+/* GENERAL PAGE STYLING */
+
 body {
     background-color: #F5EBDD;
     color: #493B43;
 }
 
 
+/* HEADER */
 
 header {
     display: flex;
@@ -11,29 +14,45 @@ header {
     color: #0a271f;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Handwriting', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+/* HEADINGS */
 
 h1 {
     background-color: #F5EBDD;
     color: #493B43;
     display: block;
     text-align: center;
+    font-family: 'ink free', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2 {
     background-color: #F5EBDD;
     color: #493B43;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    display: block;
+    font-family: 'ink free', 'Arial Narrow', Arial, sans-serif;
 }
 
+h3 {
+    background-color: #F5EBDD;
+    color: #493B43;
+    text-align: center;
+    display: block;
+    font-family: 'mv boli';
+}
+
+p {
+    font-family: 'mv boli', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* TEXT AND ALIGNMENT */
 
 .centered {
     text-align: center;
+    font-family: 'ink free', 'Arial Narrow', Arial, sans-serif;
 }
 
 .intro {
@@ -46,26 +65,393 @@ h2 {
     text-align: right;
 }
 
+.ptext {
+
+    font-family: 'mv boli', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* FOOTER */
+
 footer {
     background-color: #92B5D0;
+    padding: 15px;
 }
+
+
+/* IMAGES */
 
 img {
     border-radius: 50%;
 }
 
+
+/* YOUR COLOR SCHEMES */
+
 .accent {
     background-color: #DDAEB8;
+    padding: 20px;
+    max-width: 105px;
+    border-radius: 12px;
+
 }
 
 .lavender {
     background-color: #B8A6C9;
+    padding: 20px;
+    max-width: 105px;
+    border-radius: 12px;
 }
 
 .sage {
     background-color: #B6B99A;
+    padding: 20px;
+    max-width: 105px;
+    border-radius: 12px;
 }
 
 .gold {
-    color: #B58B50;
+    background-color: #B58B50;
+    padding: 20px;
+    max-width: 105px;
+    border-radius: 12px;
+}
+
+.goldtop {
+    background-color: #B58B50;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 15px;
+}
+
+
+/* =================================
+   CYBERSECURITY CAREER ROADMAP
+================================= */
+
+.roadmap {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    position: relative;
+}
+
+/* ROADMAP TITLE */
+
+.roadmap-title {
+    background-color: #B58B50;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.roadmap-title h2 {
+    background-color: transparent;
+    color: white;
+}
+
+/* THE ROAD */
+
+.road {
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    bottom: 100px;
+    width: 55px;
+    background-color: #77736F;
+    border-radius: 30px;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* DASHED ROAD LINE */
+
+.road::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    border-left: 4px dashed white;
+    transform: translateX(-50%);
+}
+
+/* ROADMAP CARDS */
+
+.road-card {
+    width: 42%;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 65px;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+.road-card h3 {
+    margin-top: 0;
+}
+
+/* FIRST MILESTONE - ROSE */
+
+.road-one {
+    background-color: #DDAEB8;
+    margin-right: auto;
+}
+
+/* SECOND MILESTONE - LAVENDER */
+
+.road-two {
+    background-color: #B8A6C9;
+    margin-left: auto;
+}
+
+/* THIRD MILESTONE - SAGE */
+
+.road-three {
+    background-color: #B6B99A;
+    margin-right: auto;
+}
+
+/* ROAD MILESTONE DOTS */
+
+.road-dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #B58B50;
+    border: 5px solid #F5EBDD;
+    border-radius: 50%;
+    top: 30px;
+}
+
+.road-one .road-dot,
+.road-three .road-dot {
+    right: -80px;
+}
+
+.road-two .road-dot {
+    left: -80px;
+}
+
+/* FINISH LINE */
+
+.road-finish {
+    background-color: #B58B50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.road-finish h2 {
+    background-color: transparent;
+    color: white;
+}
+
+
+/* MOBILE FRIENDLY DESIGN */
+
+@media screen and (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro,
+    .rightro {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .road {
+        left: 25px;
+        width: 35px;
+    }
+
+    .road-card {
+        width: calc(100% - 65px);
+        margin-left: 65px;
+    }
+
+    .road-one .road-dot,
+    .road-two .road-dot,
+    .road-three .road-dot {
+        left: -64px;
+        right: auto;
+    }
+}
+
+/* ABOUT ME LAYOUT */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* MOBILE LAYOUT */
+
+@media screen and (max-width: 650px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.pets-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.pets-image {
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.pets-image img {
+    width: 200px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.pets-text {
+    flex: 0 1 400px;
+    font-family: 'mv boli', Arial, sans-serif;
+    text-align: left;
+}
+
+.pets-text li {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+    .pets-container {
+        flex-direction: column;
+    }
+}
+
+.resume-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.skills {
+    flex: 1;
+}
+
+.work {
+    flex: 1;
+}
+
+.skills h3,
+.skills ul {
+    font-family: "MV Boli", cursive;
+}
+
+.itinerary {
+    font-family: "MV Boli", cursive;
+}
+
+.about-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-me,
+.my-pets {
+    flex: 1;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.about-container,
+.my-pets {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-me,
+.pets-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-text,
+.pets-text {
+    flex: 1;
+    align-items: center;
+    display: flex;
+}
+
+.about-image img,
+.pets-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.taurus-photo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.vision-board {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 0;
 }
